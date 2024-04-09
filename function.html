@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Function Practice</title>
 </head>
 <body>
 
@@ -25,6 +25,35 @@
         
         let res = say('Hello');
         console.log('Result:', res); //undefined without a return value
+
+        //arguments object -- variable is an array-like object inside a function, representing function arguments.
+        function add (){
+            let sum = 0;
+            for (let i=0; i<arguments.length; i++){
+                sum += arguments[i];
+            }
+            return sum;
+        }
+        console.log(add(3,2,5,1,7,9,4,3));
+        console.log(add(1,2,5,4,6));
+
+        //nested functiion
+        function add(x, y){
+            return x+y;
+        }
+        let sum = add; // must write this line or name add function as sum
+        function average(a, b, fn){
+            return fn(a, b)/2;
+        }
+        let out = average(10, 20, sum);
+        console.log(out);
+
+        
+
+
     </script>
 </body>
 </html>
+
+
+
