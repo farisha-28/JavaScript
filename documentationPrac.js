@@ -1,7 +1,7 @@
 // add all positive numbers -- while loop
 
 let sum = 0;
-let e =0;
+let e = 0;
 
 while(e >=0){
 
@@ -19,20 +19,20 @@ console.log(`This is the ${sum}.`);
 
 // switch case statement
 let light = "green";
-let message = ""
+let warning = "";
 
 switch (light) {
     case "red":
-        message = "Stop";
+        warning = "Stop";
         break;
     case "yellow":
-        message = "Prepare";
+        warning = "Prepare";
         break;
     default:
-        message = "Invalid traffic light color."
+        warning = "Invalid traffic light color."
 
 }
-console.log(message)
+console.log(warning);
 
 //function
 
@@ -48,7 +48,5 @@ function add(a,b){
 let num1 = parseFloat(prompt("Enter first number: "));
 let num2 = parseFloat(prompt("Enter second number: "));
 
-let resutl= addition(num1, num2);
-console.log(`This is the result: ${result1}`);
-
-let x = a
+let result_1 = addition(num1, num2);
+console.log(`This is the result: ${result_1}`);
