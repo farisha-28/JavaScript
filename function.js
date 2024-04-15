@@ -1,5 +1,5 @@
 // compareBy() function returns function that compares two objects by a property
-
+console.log('Compare By function ---');
 function compareBy(propertyName){
     return function(a, b){       // camparing two objects 
         let x = a[propertyName], y = b[propertyName];
@@ -51,12 +51,13 @@ console.log(person);
 //typically used in binary search, algorithms, and data structures
 // make a countrdonw function from 3 to 1
 
-function countDown(fromNumber){
-    console.log(fromNumber);
-    countDown(fromNumber-1);
-}
-countDown(3); // it doesnt have any stopping condition, it will exceed maximum stack size
+// function countDown(fromNumber){
+//     console.log(fromNumber);
+//     countDown(fromNumber-1);
+// }
+// countDown(3); // it doesnt have any stopping condition, it will exceed maximum stack size
 
+console.log('Recursion Counting');
 function counting(fromNumber){
     console.log(fromNumber);
     next = fromNumber-1;
@@ -67,15 +68,17 @@ function counting(fromNumber){
 counting(4);
 
 // sum of 1 to n numbers using recursion
-let t = 0;
-function summing(number){
+// if n<=1                return 1
+// return n + sum(n-1)  2 + sum(1)  --- 3
+// return n + sum(n-1)  3 + sum(2) --- 6
+// return n + sum(n-1)  4 + sum(3) --- 10
+// return n + sum(n-1)  5 + sum(4) --- 15
 
-  
-    if (nxt>1){
-        t = t+ summing(number-1)
+function sum(n){
+    if (n <=1){
+        return n;
     }
-    
+    return n+sum(n-1);
 }
-summing(10);
-
-// 10 -- 9
+let s = sum(10);
+console.log('Recursion sum: '+ s);
