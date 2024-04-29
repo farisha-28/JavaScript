@@ -1,0 +1,9 @@
+Window object: Window is a global browser's object with lots of properties and methods. The entire code comes under the window object.
+DOM: When a web page is loaded the browser creates a Document Object Model of the page.
+     The entire HTML code and tags are converted to object in JS code. This special object is called document. and this document is available in window object.
+     print window.document in console. Document is basically the model the representation of our html code.
+     DOM is a tree like structure. Inside the tree every node is called object.
+
+
+
+

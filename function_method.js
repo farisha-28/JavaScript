@@ -1,25 +1,25 @@
-// takes a string as a argument and return the vowels
+function prac(){
+    function countVowels(msg){
+        let count = 0;
+        for(const char of msg){
+            if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u")
+            count++;
+        }
+        return count;
+    }
+    document.getElementById("demo").innerHTML= 'Total No of Vowels: '+ countVowels("university of asia pacific");    
+}
 
-function countVowels(msg){
-    let count = 0;
+const arrow = (msg) =>{
+    let c = 0;
     for(const char of msg){
         if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u")
-        count++;
+        c++;
     }
-    return count;
-}
-console.log('Vowels: '+ countVowels("university of asia pacific"));
-
-const countVow = (msg) =>{
-    let count = 0;
-    for(const char of msg){
-        if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u")
-        count++;
-    }
-    return count;
+    return c;
 
 }
-console.log('Arrow function: '+ countVow("university of asia pacific"));
+console.log('Arrow function: '+ arrow("university of asia pacific"));
 
 // method is a function but method is binded with an array, data structure/ object 
 // forEach loop in arrays --- arr.forEach(callbackFunction)
@@ -75,5 +75,5 @@ let natural = [];
 for(let i=1; i<=take; i++){
     natural[i-1] = i;
 }
-console.log("1 to n: "+ natural);
+console.log("From Prompt Number--- 1 to n: "+ natural);
  

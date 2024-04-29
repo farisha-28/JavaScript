@@ -1,0 +1,13 @@
+h1{
+    color: rgb(255, 255, 255);
+    background-color: rgba(166, 28, 194, 0.185);
+    text-align: center;
+
+}
+body {
+    background-color: bisque;
+}
+button{
+    background-color: rgba(202, 8, 115, 0.205);
+    color: black;
+}
